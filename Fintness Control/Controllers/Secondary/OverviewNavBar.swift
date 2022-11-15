@@ -15,11 +15,7 @@ class OverviewNavBar: RootUIView {
     
     private let titleLabel = UILabel()
     
-    private let weekView : UIView = {
-        let view = UIView()
-        view.backgroundColor = .primary
-        return view
-    }()
+    private let weekView = WeekView()
     
     //MARK: - Lifecycle
     

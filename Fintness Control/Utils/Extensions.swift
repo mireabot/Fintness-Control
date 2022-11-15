@@ -58,3 +58,27 @@ extension UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
     }
 }
+
+//MARK: - Date
+extension Date {
+    private var calendar : Calendar {
+        return Calendar.current
+    }
+    
+    var startWeek: Date {
+        let component = calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)
+        guard let day = calendar.date(from: component) else { return self}
+        
+        return calendar.date(byAdding: .day, value: 1, to: day) ?? self
+    }
+    
+    func goNext(to days: Int) -> Date {
+        return calendar.date(byAdding: .day, value: days, to: self) ?? self
+    }
+    
+    func cutTime() -> Date {
+        let components = calendar.dateComponents([.year, .month, .day], from: self)
+        
+        return calendar.date(from: components) ?? self
+    }
+}

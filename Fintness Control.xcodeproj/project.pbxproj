@@ -23,6 +23,8 @@
 		351B9FFA29242B6000D1D4AA /* CustomOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FF929242B6000D1D4AA /* CustomOptionButton.swift */; };
 		351B9FFD292430E700D1D4AA /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FFC292430E700D1D4AA /* OverviewNavBar.swift */; };
 		351B9FFF2924313100D1D4AA /* RootUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FFE2924313100D1D4AA /* RootUIView.swift */; };
+		351BA00129243C4600D1D4AA /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA00029243C4600D1D4AA /* WeekView.swift */; };
+		351BA00329243D5800D1D4AA /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA00229243D5800D1D4AA /* DayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		351B9FF929242B6000D1D4AA /* CustomOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOptionButton.swift; sourceTree = "<group>"; };
 		351B9FFC292430E700D1D4AA /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		351B9FFE2924313100D1D4AA /* RootUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootUIView.swift; sourceTree = "<group>"; };
+		351BA00029243C4600D1D4AA /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		351BA00229243D5800D1D4AA /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				351B9FF929242B6000D1D4AA /* CustomOptionButton.swift */,
+				351BA00029243C4600D1D4AA /* WeekView.swift */,
+				351BA00229243D5800D1D4AA /* DayView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,11 +222,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				351B9FF42923FF8100D1D4AA /* ProgressController.swift in Sources */,
+				351BA00329243D5800D1D4AA /* DayView.swift in Sources */,
 				351B9FE62923F12300D1D4AA /* Extensions.swift in Sources */,
 				351B9FFF2924313100D1D4AA /* RootUIView.swift in Sources */,
 				351B9FF22923FF7800D1D4AA /* SessionController.swift in Sources */,
 				351B9FEA2923FA7200D1D4AA /* RootNavController.swift in Sources */,
 				351B9F9F292155F200D1D4AA /* RootTabBarController.swift in Sources */,
+				351BA00129243C4600D1D4AA /* WeekView.swift in Sources */,
 				351B9FF62923FF8900D1D4AA /* SettingsController.swift in Sources */,
 				351B9FEC2923FC2D00D1D4AA /* RootViewController.swift in Sources */,
 				351B9F9B292155F200D1D4AA /* AppDelegate.swift in Sources */,
