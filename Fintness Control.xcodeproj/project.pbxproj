@@ -9,19 +9,35 @@
 /* Begin PBXBuildFile section */
 		351B9F9B292155F200D1D4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9F9A292155F200D1D4AA /* AppDelegate.swift */; };
 		351B9F9D292155F200D1D4AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9F9C292155F200D1D4AA /* SceneDelegate.swift */; };
-		351B9F9F292155F200D1D4AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9F9E292155F200D1D4AA /* ViewController.swift */; };
+		351B9F9F292155F200D1D4AA /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9F9E292155F200D1D4AA /* RootTabBarController.swift */; };
 		351B9FA4292155F400D1D4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351B9FA3292155F400D1D4AA /* Assets.xcassets */; };
 		351B9FA7292155F400D1D4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351B9FA5292155F400D1D4AA /* LaunchScreen.storyboard */; };
+		351B9FE42923F07500D1D4AA /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FE32923F07500D1D4AA /* Enums.swift */; };
+		351B9FE62923F12300D1D4AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FE52923F12300D1D4AA /* Extensions.swift */; };
+		351B9FEA2923FA7200D1D4AA /* RootNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FE92923FA7200D1D4AA /* RootNavController.swift */; };
+		351B9FEC2923FC2D00D1D4AA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FEB2923FC2C00D1D4AA /* RootViewController.swift */; };
+		351B9FF02923FD7000D1D4AA /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FEF2923FD6F00D1D4AA /* OverviewController.swift */; };
+		351B9FF22923FF7800D1D4AA /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FF12923FF7800D1D4AA /* SessionController.swift */; };
+		351B9FF42923FF8100D1D4AA /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FF32923FF8100D1D4AA /* ProgressController.swift */; };
+		351B9FF62923FF8900D1D4AA /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FF52923FF8900D1D4AA /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		351B9F97292155F200D1D4AA /* Fintness Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fintness Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		351B9F9A292155F200D1D4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		351B9F9C292155F200D1D4AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		351B9F9E292155F200D1D4AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		351B9F9E292155F200D1D4AA /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		351B9FA3292155F400D1D4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		351B9FA6292155F400D1D4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		351B9FA8292155F400D1D4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		351B9FE32923F07500D1D4AA /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		351B9FE52923F12300D1D4AA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		351B9FE92923FA7200D1D4AA /* RootNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavController.swift; sourceTree = "<group>"; };
+		351B9FEB2923FC2C00D1D4AA /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		351B9FEF2923FD6F00D1D4AA /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
+		351B9FF12923FF7800D1D4AA /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
+		351B9FF32923FF8100D1D4AA /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
+		351B9FF52923FF8900D1D4AA /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,54 @@
 		351B9F99292155F200D1D4AA /* Fintness Control */ = {
 			isa = PBXGroup;
 			children = (
+				351B9FE22923F06D00D1D4AA /* Utils */,
+				351B9FE12923EFBB00D1D4AA /* Controllers */,
 				351B9F9A292155F200D1D4AA /* AppDelegate.swift */,
 				351B9F9C292155F200D1D4AA /* SceneDelegate.swift */,
-				351B9F9E292155F200D1D4AA /* ViewController.swift */,
 				351B9FA3292155F400D1D4AA /* Assets.xcassets */,
 				351B9FA5292155F400D1D4AA /* LaunchScreen.storyboard */,
 				351B9FA8292155F400D1D4AA /* Info.plist */,
 			);
 			path = "Fintness Control";
+			sourceTree = "<group>";
+		};
+		351B9FE12923EFBB00D1D4AA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				351B9FEE2923FD6400D1D4AA /* Main */,
+				351B9FED2923FD5400D1D4AA /* Root */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		351B9FE22923F06D00D1D4AA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				351B9FE32923F07500D1D4AA /* Enums.swift */,
+				351B9FE52923F12300D1D4AA /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		351B9FED2923FD5400D1D4AA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				351B9FEB2923FC2C00D1D4AA /* RootViewController.swift */,
+				351B9FE92923FA7200D1D4AA /* RootNavController.swift */,
+				351B9F9E292155F200D1D4AA /* RootTabBarController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		351B9FEE2923FD6400D1D4AA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				351B9FEF2923FD6F00D1D4AA /* OverviewController.swift */,
+				351B9FF12923FF7800D1D4AA /* SessionController.swift */,
+				351B9FF32923FF8100D1D4AA /* ProgressController.swift */,
+				351B9FF52923FF8900D1D4AA /* SettingsController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				351B9F9F292155F200D1D4AA /* ViewController.swift in Sources */,
+				351B9FF42923FF8100D1D4AA /* ProgressController.swift in Sources */,
+				351B9FE62923F12300D1D4AA /* Extensions.swift in Sources */,
+				351B9FF22923FF7800D1D4AA /* SessionController.swift in Sources */,
+				351B9FEA2923FA7200D1D4AA /* RootNavController.swift in Sources */,
+				351B9F9F292155F200D1D4AA /* RootTabBarController.swift in Sources */,
+				351B9FF62923FF8900D1D4AA /* SettingsController.swift in Sources */,
+				351B9FEC2923FC2D00D1D4AA /* RootViewController.swift in Sources */,
 				351B9F9B292155F200D1D4AA /* AppDelegate.swift in Sources */,
+				351B9FE42923F07500D1D4AA /* Enums.swift in Sources */,
+				351B9FF02923FD7000D1D4AA /* OverviewController.swift in Sources */,
 				351B9F9D292155F200D1D4AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +346,7 @@
 				INFOPLIST_FILE = "Fintness Control/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +374,7 @@
 				INFOPLIST_FILE = "Fintness Control/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +386,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
