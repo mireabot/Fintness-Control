@@ -20,6 +20,9 @@
 		351B9FF22923FF7800D1D4AA /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FF12923FF7800D1D4AA /* SessionController.swift */; };
 		351B9FF42923FF8100D1D4AA /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FF32923FF8100D1D4AA /* ProgressController.swift */; };
 		351B9FF62923FF8900D1D4AA /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FF52923FF8900D1D4AA /* SettingsController.swift */; };
+		351B9FFA29242B6000D1D4AA /* CustomOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FF929242B6000D1D4AA /* CustomOptionButton.swift */; };
+		351B9FFD292430E700D1D4AA /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FFC292430E700D1D4AA /* OverviewNavBar.swift */; };
+		351B9FFF2924313100D1D4AA /* RootUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351B9FFE2924313100D1D4AA /* RootUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		351B9FF12923FF7800D1D4AA /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		351B9FF32923FF8100D1D4AA /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		351B9FF52923FF8900D1D4AA /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		351B9FF929242B6000D1D4AA /* CustomOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOptionButton.swift; sourceTree = "<group>"; };
+		351B9FFC292430E700D1D4AA /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
+		351B9FFE2924313100D1D4AA /* RootUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		351B9F99292155F200D1D4AA /* Fintness Control */ = {
 			isa = PBXGroup;
 			children = (
+				351B9FF829242B3B00D1D4AA /* Views */,
 				351B9FE22923F06D00D1D4AA /* Utils */,
 				351B9FE12923EFBB00D1D4AA /* Controllers */,
 				351B9F9A292155F200D1D4AA /* AppDelegate.swift */,
@@ -84,6 +91,7 @@
 		351B9FE12923EFBB00D1D4AA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				351B9FFB292430D300D1D4AA /* Secondary */,
 				351B9FEE2923FD6400D1D4AA /* Main */,
 				351B9FED2923FD5400D1D4AA /* Root */,
 			);
@@ -105,6 +113,7 @@
 				351B9FEB2923FC2C00D1D4AA /* RootViewController.swift */,
 				351B9FE92923FA7200D1D4AA /* RootNavController.swift */,
 				351B9F9E292155F200D1D4AA /* RootTabBarController.swift */,
+				351B9FFE2924313100D1D4AA /* RootUIView.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -118,6 +127,22 @@
 				351B9FF52923FF8900D1D4AA /* SettingsController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		351B9FF829242B3B00D1D4AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				351B9FF929242B6000D1D4AA /* CustomOptionButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		351B9FFB292430D300D1D4AA /* Secondary */ = {
+			isa = PBXGroup;
+			children = (
+				351B9FFC292430E700D1D4AA /* OverviewNavBar.swift */,
+			);
+			path = Secondary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +217,7 @@
 			files = (
 				351B9FF42923FF8100D1D4AA /* ProgressController.swift in Sources */,
 				351B9FE62923F12300D1D4AA /* Extensions.swift in Sources */,
+				351B9FFF2924313100D1D4AA /* RootUIView.swift in Sources */,
 				351B9FF22923FF7800D1D4AA /* SessionController.swift in Sources */,
 				351B9FEA2923FA7200D1D4AA /* RootNavController.swift in Sources */,
 				351B9F9F292155F200D1D4AA /* RootTabBarController.swift in Sources */,
@@ -201,6 +227,8 @@
 				351B9FE42923F07500D1D4AA /* Enums.swift in Sources */,
 				351B9FF02923FD7000D1D4AA /* OverviewController.swift in Sources */,
 				351B9F9D292155F200D1D4AA /* SceneDelegate.swift in Sources */,
+				351B9FFA29242B6000D1D4AA /* CustomOptionButton.swift in Sources */,
+				351B9FFD292430E700D1D4AA /* OverviewNavBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

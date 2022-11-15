@@ -10,6 +10,9 @@ import UIKit
 class OverviewController: RootViewController {
     //MARK: - Properties
     
+    private let navBar = OverviewNavBar()
+    
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,4 +20,30 @@ class OverviewController: RootViewController {
     }
     
     //MARK: - Helpers
+    
+}
+
+extension OverviewController {
+    
+    override func addView() {
+        super.addView()
+        view.addSubview(navBar)
+    }
+    
+    override func layout() {
+        super.layout()
+        
+        NSLayoutConstraint.activate([
+            navBar.topAnchor.constraint(equalTo: view.topAnchor),
+            navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            
+        ])
+    }
+    
+    override func configure() {
+        super.configure()
+        navigationController?.navigationBar.isHidden = true
+        navBar.translatesAutoresizingMaskIntoConstraints = false
+    }
 }

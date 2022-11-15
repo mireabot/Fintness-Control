@@ -22,6 +22,11 @@ enum Resourses {
         static var session = UIImage(named: "session")
         static var progress = UIImage(named: "progress")
         static var settings = UIImage(named: "settings")
+        
+        enum SystemImages {
+            static var arrowDown = UIImage(named: "arrowDown")
+            static var add = UIImage(named: "add")
+        }
     }
     
     enum Fonts {
