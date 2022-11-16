@@ -9,7 +9,11 @@ import UIKit
 
 class OverviewNavBar: RootUIView {
     //MARK: - Properties
-    private let filterButton = CustomOptionButton()
+    private let filterButton : CustomOptionButton = {
+        let button = CustomOptionButton(with: .secondary)
+        button.setTitle("All Workouts")
+        return button
+    }()
     
     private let addButton = UIButton()
     
@@ -46,10 +50,8 @@ extension OverviewNavBar {
             addButton.heightAnchor.constraint(equalToConstant: 28),
             addButton.widthAnchor.constraint(equalToConstant: 28),
             
-            filterButton.topAnchor.constraint(equalTo: addButton.topAnchor),
+            filterButton.centerYAnchor.constraint(equalTo: addButton.centerYAnchor),
             filterButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -15),
-            filterButton.heightAnchor.constraint(equalToConstant: 28),
-            filterButton.widthAnchor.constraint(equalToConstant: 130),
             
             titleLabel.centerYAnchor.constraint(equalTo: filterButton.centerYAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
@@ -68,7 +70,6 @@ extension OverviewNavBar {
         super.configure()
         backgroundColor = .white
         
-        filterButton.setTitle("All Workouts")
         filterButton.addTarget(self, action: #selector(filterButtonTapped), for: .touchUpInside)
         
         titleLabel.text = "Today"

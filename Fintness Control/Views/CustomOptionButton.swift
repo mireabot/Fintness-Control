@@ -7,28 +7,40 @@
 
 import UIKit
 
+public enum ButtonStyle {
+    case primary
+    case secondary
+}
+
 final class CustomOptionButton: UIButton {
     //MARK: - Properties
     
     private let title = UILabel()
     
     private let image = UIImageView()
+    
+    private var type: ButtonStyle = .primary
         
     //MARK: - Lifecycle
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(with type: ButtonStyle, and title: String? = nil) {
+        super.init(frame: .zero)
+        self.type = type
+        
         addViews()
         layout()
         configure()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(frame: .zero)
+        
+        addViews()
+        layout()
+        configure()
     }
-    
     //MARK: - Helpers
     
-    func setTitle(_ label: String) {
+    func setTitle(_ label: String?) {
         title.text = label
     }
 }
@@ -40,30 +52,45 @@ private extension CustomOptionButton {
     }
     
     func layout() {
+        
+        var offset : CGFloat {
+            switch type {
+            case .primary: return 0
+            case .secondary: return 10
+            }
+        }
+        
         NSLayoutConstraint.activate([
             image.centerYAnchor.constraint(equalTo: centerYAnchor),
-            image.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            image.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -offset),
             image.heightAnchor.constraint(equalToConstant: 5),
             image.widthAnchor.constraint(equalToConstant: 10),
             
             title.centerYAnchor.constraint(equalTo: centerYAnchor),
-            title.trailingAnchor.constraint(equalTo: image.leadingAnchor),
-            title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10)
+            title.trailingAnchor.constraint(equalTo: image.leadingAnchor, constant: -10),
+            title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: offset)
         ])
     }
     
     func configure() {
-        
-        backgroundColor = .secondary
-        layer.cornerRadius = 15
+        switch type {
+        case .primary:
+            title.textColor = .darkGray
+            image.tintColor = .darkGray
+            title.font = Resourses.Fonts.regular(with: 15)
+        case .secondary:
+            backgroundColor = .secondary
+            layer.cornerRadius = 15
+            title.textColor = .primary
+            image.tintColor = .primary
+            title.font = Resourses.Fonts.regular(with: 15)
 
+        }
         
-        title.textColor = .primary
         title.textAlignment = .center
-        title.font = Resourses.Fonts.regular(with: 15)
         
         image.image = Resourses.Images.SystemImages.arrowDown?.withRenderingMode(.alwaysTemplate)
-        image.tintColor = .primary
+        
         
         makeSystemButton(self)
     }
