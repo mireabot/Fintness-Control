@@ -61,24 +61,26 @@ extension UIView {
 
 //MARK: - Date
 extension Date {
-    private var calendar : Calendar {
-        return Calendar.current
-    }
+    static var calendar : Calendar = {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.firstWeekday = 2
+        return calendar
+    }()
     
     var startWeek: Date {
-        let component = calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)
-        guard let day = calendar.date(from: component) else { return self}
+        let component = Date.calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)
+        guard let day = Date.calendar.date(from: component) else { return self}
         
-        return calendar.date(byAdding: .day, value: 1, to: day) ?? self
+        return Date.calendar.date(byAdding: .day, value: 1, to: day) ?? self
     }
     
     func goNext(to days: Int) -> Date {
-        return calendar.date(byAdding: .day, value: days, to: self) ?? self
+        return Date.calendar.date(byAdding: .day, value: days, to: self) ?? self
     }
     
     func cutTime() -> Date {
-        let components = calendar.dateComponents([.year, .month, .day], from: self)
+        let components = Date.calendar.dateComponents([.year, .month, .day], from: self)
         
-        return calendar.date(from: components) ?? self
+        return Date.calendar.date(from: components) ?? self
     }
 }

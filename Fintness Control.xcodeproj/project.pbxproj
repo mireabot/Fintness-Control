@@ -26,6 +26,8 @@
 		351BA00129243C4600D1D4AA /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA00029243C4600D1D4AA /* WeekView.swift */; };
 		351BA00329243D5800D1D4AA /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA00229243D5800D1D4AA /* DayView.swift */; };
 		351BA0052925535F00D1D4AA /* RootInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA0042925535F00D1D4AA /* RootInfoView.swift */; };
+		351BA0072925671900D1D4AA /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA0062925671900D1D4AA /* TimerView.swift */; };
+		351BA0092925679300D1D4AA /* ProgressTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA0082925679300D1D4AA /* ProgressTimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		351BA00029243C4600D1D4AA /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		351BA00229243D5800D1D4AA /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		351BA0042925535F00D1D4AA /* RootInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInfoView.swift; sourceTree = "<group>"; };
+		351BA0062925671900D1D4AA /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		351BA0082925679300D1D4AA /* ProgressTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 				351B9FF929242B6000D1D4AA /* CustomOptionButton.swift */,
 				351BA00029243C4600D1D4AA /* WeekView.swift */,
 				351BA00229243D5800D1D4AA /* DayView.swift */,
+				351BA0062925671900D1D4AA /* TimerView.swift */,
+				351BA0082925679300D1D4AA /* ProgressTimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351BA0072925671900D1D4AA /* TimerView.swift in Sources */,
 				351B9FF42923FF8100D1D4AA /* ProgressController.swift in Sources */,
 				351BA00329243D5800D1D4AA /* DayView.swift in Sources */,
 				351B9FE62923F12300D1D4AA /* Extensions.swift in Sources */,
@@ -233,6 +240,7 @@
 				351B9F9F292155F200D1D4AA /* RootTabBarController.swift in Sources */,
 				351BA00129243C4600D1D4AA /* WeekView.swift in Sources */,
 				351B9FF62923FF8900D1D4AA /* SettingsController.swift in Sources */,
+				351BA0092925679300D1D4AA /* ProgressTimerView.swift in Sources */,
 				351B9FEC2923FC2D00D1D4AA /* RootViewController.swift in Sources */,
 				351B9F9B292155F200D1D4AA /* AppDelegate.swift in Sources */,
 				351B9FE42923F07500D1D4AA /* Enums.swift in Sources */,
