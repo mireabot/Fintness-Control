@@ -35,6 +35,8 @@
 		351BA01429270AC600D1D4AA /* SessionStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA01329270AC600D1D4AA /* SessionStepsView.swift */; };
 		351BA01829270C6200D1D4AA /* RootBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA01729270C6100D1D4AA /* RootBarsView.swift */; };
 		351BA01A29270DBD00D1D4AA /* RootBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA01929270DBD00D1D4AA /* RootBarView.swift */; };
+		351BA01C2927DE1700D1D4AA /* WorkoutItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA01B2927DE1700D1D4AA /* WorkoutItemView.swift */; };
+		351BA01E2927E0E100D1D4AA /* OverViewWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA01D2927E0E100D1D4AA /* OverViewWorkoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		351BA01329270AC600D1D4AA /* SessionStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStepsView.swift; sourceTree = "<group>"; };
 		351BA01729270C6100D1D4AA /* RootBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBarsView.swift; sourceTree = "<group>"; };
 		351BA01929270DBD00D1D4AA /* RootBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBarView.swift; sourceTree = "<group>"; };
+		351BA01B2927DE1700D1D4AA /* WorkoutItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutItemView.swift; sourceTree = "<group>"; };
+		351BA01D2927E0E100D1D4AA /* OverViewWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverViewWorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 				351BA00A2926F0E400D1D4AA /* TimerPercentView.swift */,
 				351BA00C2926FC0800D1D4AA /* SessionStatsView.swift */,
 				351BA01329270AC600D1D4AA /* SessionStepsView.swift */,
+				351BA01D2927E0E100D1D4AA /* OverViewWorkoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				351BA00F2926FC4E00D1D4AA /* StatsItemView.swift */,
+				351BA01B2927DE1700D1D4AA /* WorkoutItemView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				351BA012292703D300D1D4AA /* DataSources.swift in Sources */,
+				351BA01E2927E0E100D1D4AA /* OverViewWorkoutView.swift in Sources */,
 				351BA0072925671900D1D4AA /* TimerView.swift in Sources */,
 				351B9FF42923FF8100D1D4AA /* ProgressController.swift in Sources */,
 				351BA00329243D5800D1D4AA /* DayView.swift in Sources */,
@@ -267,6 +274,7 @@
 				351B9FFF2924313100D1D4AA /* RootUIView.swift in Sources */,
 				351B9FF22923FF7800D1D4AA /* SessionController.swift in Sources */,
 				351BA00B2926F0E500D1D4AA /* TimerPercentView.swift in Sources */,
+				351BA01C2927DE1700D1D4AA /* WorkoutItemView.swift in Sources */,
 				351B9FEA2923FA7200D1D4AA /* RootNavController.swift in Sources */,
 				351BA00D2926FC0800D1D4AA /* SessionStatsView.swift in Sources */,
 				351BA0102926FC4E00D1D4AA /* StatsItemView.swift in Sources */,

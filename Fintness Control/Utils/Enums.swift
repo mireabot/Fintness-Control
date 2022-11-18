@@ -26,6 +26,7 @@ enum Resourses {
         enum SystemImages {
             static var arrowDown = UIImage(named: "arrowDown")
             static var add = UIImage(named: "add")
+            static var arrowRight = UIImage(named: "arrowRight")
         }
         
         enum StatsImages {
