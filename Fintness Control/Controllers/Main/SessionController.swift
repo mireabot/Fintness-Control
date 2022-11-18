@@ -18,7 +18,7 @@ class SessionController: RootViewController {
     
     private let statsView = SessionStatsView(with: "Workout Stats".uppercased())
     
-    private let stepsView = RootInfoView(with: "Steps Counter".uppercased())
+    private let stepsView = SessionStepsView(with: "Steps Counter".uppercased())
     
     //MARK: - Lifecycle
     
@@ -49,7 +49,7 @@ extension SessionController {
             stepsView.topAnchor.constraint(equalTo: statsView.topAnchor),
             stepsView.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: 7.5),
             stepsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
-            stepsView.heightAnchor.constraint(equalToConstant: 100),
+            stepsView.heightAnchor.constraint(equalTo: statsView.heightAnchor)
         ])
     }
     
@@ -66,5 +66,11 @@ extension SessionController {
                                         .averagePace(value: "9'20"),
                                         .totalSteps(value: "7,682"),
                                         .totalDistance(value: "8.25")])
+        
+        stepsView.configure(with: [ .init(value: "8k", height: 1, title: "2/14"),
+                                    .init(value: "7k", height: 0.8, title: "2/15"),
+                                    .init(value: "5k", height: 0.6, title: "2/16"),
+                                    .init(value: "6k", height: 0.7, title: "2/17")
+        ])
     }
 }

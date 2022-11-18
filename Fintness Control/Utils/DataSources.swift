@@ -34,3 +34,11 @@ enum StatsItem {
         }
     }
 }
+
+extension RootBarView {
+    struct BarsData {
+        let value: String
+        let height: Double
+        let title: String
+    }
+}
