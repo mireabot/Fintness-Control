@@ -1,10 +1,8 @@
-# Fitness Control
-
 
 <h1 align="center">
   <br>
   <br>
-  BrewLand
+  Fitness Control
   <br>
 </h1>
 
