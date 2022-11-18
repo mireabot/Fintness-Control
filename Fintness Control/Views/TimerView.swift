@@ -65,6 +65,36 @@ class TimerView: RootInfoView {
         return stack
     }()
     
+    private let bottomStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.spacing = 25
+        stack.distribution = .fillProportionally
+        
+        return stack
+    }()
+    
+    private let completedView : TimerPercentView = {
+        let view = TimerPercentView()
+        view.configure(with: "Completed".uppercased(), and: 60)
+        
+        return view
+    }()
+    
+    private let remainedView : TimerPercentView = {
+        let view = TimerPercentView()
+        view.configure(with: "Remaining".uppercased(), and: 40)
+        
+        return view
+    }()
+    
+    private let lineView : UIView = {
+        let view = UIView()
+        view.backgroundColor = .line
+        
+        return view
+    }()
+    
     //MARK: - Lifecycle
     
     //MARK: - Helpers
@@ -76,11 +106,16 @@ extension TimerView {
         
         addActivatedView(progressView)
         addActivatedView(timerStackView)
+        addActivatedView(bottomStackView)
         
         [timeLabel,
          valueTimeLabel,
          remainingTimeLabel,
-         remainingTimeValueLabel].forEach { timerStackView.addArrangedSubview($0) }
+         remainingTimeValueLabel].forEach ( timerStackView.addArrangedSubview )
+        
+        [completedView,
+         lineView,
+         remainedView].forEach ( bottomStackView.addArrangedSubview )
     }
     
     override func layout() {
@@ -94,7 +129,14 @@ extension TimerView {
             progressView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40),
             
             timerStackView.centerXAnchor.constraint(equalTo: progressView.centerXAnchor),
-            timerStackView.centerYAnchor.constraint(equalTo: progressView.centerYAnchor)
+            timerStackView.centerYAnchor.constraint(equalTo: progressView.centerYAnchor),
+            
+            bottomStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            bottomStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -28),
+            bottomStackView.heightAnchor.constraint(equalToConstant: 35),
+            bottomStackView.widthAnchor.constraint(equalToConstant: 180),
+            
+            lineView.widthAnchor.constraint(equalToConstant: 1)
         ])
     }
     

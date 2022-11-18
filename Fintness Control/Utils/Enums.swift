@@ -27,6 +27,13 @@ enum Resourses {
             static var arrowDown = UIImage(named: "arrowDown")
             static var add = UIImage(named: "add")
         }
+        
+        enum StatsImages {
+            static var heart = UIImage(named: "heart")
+            static var pace = UIImage(named: "pace")
+            static var steps = UIImage(named: "steps")
+            static var distance = UIImage(named: "distance")
+        }
     }
     
     enum Fonts {
@@ -40,6 +47,13 @@ enum Resourses {
         static var session = "Session"
         static var progress = "Progress"
         static var settings = "Settings"
+        
+        enum StatsStrings {
+            static var heart = "Heart Rate"
+            static var pace = "Average Pace"
+            static var steps = "Total Steps"
+            static var distance = "Total Distance"
+        }
     }
 }
 

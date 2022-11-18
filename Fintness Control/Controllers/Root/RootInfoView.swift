@@ -21,7 +21,7 @@ class RootInfoView: RootUIView {
     
     private let button = CustomOptionButton(with: .primary)
     
-    private let content : UIView = {
+    let content : UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = UIColor.line?.cgColor

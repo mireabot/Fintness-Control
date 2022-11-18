@@ -28,6 +28,10 @@
 		351BA0052925535F00D1D4AA /* RootInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA0042925535F00D1D4AA /* RootInfoView.swift */; };
 		351BA0072925671900D1D4AA /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA0062925671900D1D4AA /* TimerView.swift */; };
 		351BA0092925679300D1D4AA /* ProgressTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA0082925679300D1D4AA /* ProgressTimerView.swift */; };
+		351BA00B2926F0E500D1D4AA /* TimerPercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA00A2926F0E400D1D4AA /* TimerPercentView.swift */; };
+		351BA00D2926FC0800D1D4AA /* SessionStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA00C2926FC0800D1D4AA /* SessionStatsView.swift */; };
+		351BA0102926FC4E00D1D4AA /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA00F2926FC4E00D1D4AA /* StatsItemView.swift */; };
+		351BA012292703D300D1D4AA /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351BA011292703D300D1D4AA /* DataSources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		351BA0042925535F00D1D4AA /* RootInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInfoView.swift; sourceTree = "<group>"; };
 		351BA0062925671900D1D4AA /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		351BA0082925679300D1D4AA /* ProgressTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTimerView.swift; sourceTree = "<group>"; };
+		351BA00A2926F0E400D1D4AA /* TimerPercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPercentView.swift; sourceTree = "<group>"; };
+		351BA00C2926FC0800D1D4AA /* SessionStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatsView.swift; sourceTree = "<group>"; };
+		351BA00F2926FC4E00D1D4AA /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
+		351BA011292703D300D1D4AA /* DataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 			children = (
 				351B9FE32923F07500D1D4AA /* Enums.swift */,
 				351B9FE52923F12300D1D4AA /* Extensions.swift */,
+				351BA011292703D300D1D4AA /* DataSources.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -143,11 +152,14 @@
 		351B9FF829242B3B00D1D4AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				351BA00E2926FC4300D1D4AA /* Items */,
 				351B9FF929242B6000D1D4AA /* CustomOptionButton.swift */,
 				351BA00029243C4600D1D4AA /* WeekView.swift */,
 				351BA00229243D5800D1D4AA /* DayView.swift */,
 				351BA0062925671900D1D4AA /* TimerView.swift */,
 				351BA0082925679300D1D4AA /* ProgressTimerView.swift */,
+				351BA00A2926F0E400D1D4AA /* TimerPercentView.swift */,
+				351BA00C2926FC0800D1D4AA /* SessionStatsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +170,14 @@
 				351B9FFC292430E700D1D4AA /* OverviewNavBar.swift */,
 			);
 			path = Secondary;
+			sourceTree = "<group>";
+		};
+		351BA00E2926FC4300D1D4AA /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				351BA00F2926FC4E00D1D4AA /* StatsItemView.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,13 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351BA012292703D300D1D4AA /* DataSources.swift in Sources */,
 				351BA0072925671900D1D4AA /* TimerView.swift in Sources */,
 				351B9FF42923FF8100D1D4AA /* ProgressController.swift in Sources */,
 				351BA00329243D5800D1D4AA /* DayView.swift in Sources */,
 				351B9FE62923F12300D1D4AA /* Extensions.swift in Sources */,
 				351B9FFF2924313100D1D4AA /* RootUIView.swift in Sources */,
 				351B9FF22923FF7800D1D4AA /* SessionController.swift in Sources */,
+				351BA00B2926F0E500D1D4AA /* TimerPercentView.swift in Sources */,
 				351B9FEA2923FA7200D1D4AA /* RootNavController.swift in Sources */,
+				351BA00D2926FC0800D1D4AA /* SessionStatsView.swift in Sources */,
+				351BA0102926FC4E00D1D4AA /* StatsItemView.swift in Sources */,
 				351B9F9F292155F200D1D4AA /* RootTabBarController.swift in Sources */,
 				351BA00129243C4600D1D4AA /* WeekView.swift in Sources */,
 				351B9FF62923FF8900D1D4AA /* SettingsController.swift in Sources */,
