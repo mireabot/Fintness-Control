@@ -23,6 +23,7 @@
 * Working with CAShapeLayer
 * Organizing resources and utils for scalable projects
 * Creating complex UI with native instruments
+* Working with calendar to update today's day date
 
 ## Tech Stack
 
